@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "9b4400bd-7e0b-4d7b-9ded-8c4a917a652a",
+		"name": "books",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48435656",
+		"_collection_link": "https://bold-escape-262912.postman.co/workspace/Fedor-Alekseev's-Workspace~fb255c09-49a1-4247-8f94-abff208b703a/collection/48435656-9b4400bd-7e0b-4d7b-9ded-8c4a917a652a?action=share&source=collection_link&creator=48435656"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"DDD\",\r\n    \"author\": \"Evans\",\r\n    \"year\": 2003\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/books",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
